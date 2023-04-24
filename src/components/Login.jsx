@@ -13,7 +13,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     const getUser = async(response) => {
-        const decoded = jwt_decode(response.credencial);
+        const decoded = jwt_decode(response.credential);
         localStorage.setItem('user', JSON.stringify(decoded));
         console.log(decoded);
         // const { name, picture, sub, email } = decoded;
